@@ -58,9 +58,18 @@ namespace C__Basics_Session05_Assignment
 
             #region Q07
             //Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
-            Genre genre = Genre.Fiction;
-            string genreAsString = genre.ToString();
-            Console.WriteLine(genreAsString);
+            //Genre genre = Genre.Fiction;
+            //string genreAsString = genre.ToString();
+            //Console.WriteLine(genreAsString);
+            #endregion
+
+            #region Q08
+            //Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and
+            //print the result.
+
+            string genreText = "Science";
+            Genre genreValue = (Genre) Enum.Parse(typeof(Genre), genreText);
+            Console.WriteLine(genreValue);
             #endregion
         }
     }
