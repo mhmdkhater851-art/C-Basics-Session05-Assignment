@@ -1,4 +1,5 @@
-﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+﻿using System.Drawing;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace C__Basics_Session05_Assignment
 {
@@ -67,9 +68,26 @@ namespace C__Basics_Session05_Assignment
             //Given string genreText = "Science";, convert it into a Genre value using Enum.Parse() and
             //print the result.
 
-            string genreText = "Science";
-            Genre genreValue = (Genre) Enum.Parse(typeof(Genre), genreText);
-            Console.WriteLine(genreValue);
+            //string genreText = "Science";
+            //Genre genreValue = (Genre) Enum.Parse(typeof(Genre), genreText);
+            //Console.WriteLine(genreValue);
+            #endregion
+
+            #region Q09
+            //Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to
+            //attempt the conversion. Print "Unknown genre" if it fails.
+
+            string genreText = "Mystery";
+            bool isParsed = Enum.TryParse(genreText, out Genre result);
+            if (isParsed)
+            {
+                Console.WriteLine($"Valid Conversion the result is : {result}");
+            }
+            else
+            {
+                Console.WriteLine("Unknown genre");
+            }
+
             #endregion
         }
     }
