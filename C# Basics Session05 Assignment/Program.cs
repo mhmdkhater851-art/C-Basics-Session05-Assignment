@@ -26,8 +26,15 @@
             #region Q03
             //Add a public string Title; field to Book.Set it and print it from Main.
 
-            book01.Title = "Programming Book";
-            Console.WriteLine(book01.Title);
+            //book01.Title = "Programming Book";
+            //Console.WriteLine(book01.Title);
+            #endregion
+
+            #region Q04
+            //Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book,
+            //assign it Genre.Science, and print it.
+            book01.BookGenre = Genre.Science;
+            Console.WriteLine(book01.BookGenre);
             #endregion
         }
     }
