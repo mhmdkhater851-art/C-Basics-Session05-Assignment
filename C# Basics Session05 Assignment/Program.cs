@@ -7,7 +7,7 @@ namespace C__Basics_Session05_Assignment
     {
         static void Main(string[] args)
         {
-            Book book01 = new Book();
+            //Book book01 = new Book();
             #region Q01
             //Add a private string password = "secret"; field to a Book class. Try to print it from Main
             //(outside the class). What happens, and why?
@@ -77,16 +77,16 @@ namespace C__Basics_Session05_Assignment
             //Given string genreText = "Mystery"; (not a valid Genre value), use Enum.TryParse() to
             //attempt the conversion. Print "Unknown genre" if it fails.
 
-            string genreText = "Mystery";
-            bool isParsed = Enum.TryParse(genreText, out Genre result);
-            if (isParsed)
-            {
-                Console.WriteLine($"Valid Conversion the result is : {result}");
-            }
-            else
-            {
-                Console.WriteLine("Unknown genre");
-            }
+            //string genreText = "Mystery";
+            //bool isParsed = Enum.TryParse(genreText, out Genre result);
+            //if (isParsed)
+            //{
+            //    Console.WriteLine($"Valid Conversion the result is : {result}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Unknown genre");
+            //}
 
             #endregion
         }
