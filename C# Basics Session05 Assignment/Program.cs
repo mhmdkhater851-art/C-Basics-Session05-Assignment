@@ -17,10 +17,17 @@
             //Add an internal int copiesInStock = 5; field to Book.Print it from Main.Does it compile?
             //Why?
 
-            Console.WriteLine(book01.copiesInStock);
+            //Console.WriteLine(book01.copiesInStock);
             // Yes, it will compile.
             // "copiesInStock" has the "internal" access modifier,
             // which allows access from any class within the same project.
+            #endregion
+
+            #region Q03
+            //Add a public string Title; field to Book.Set it and print it from Main.
+
+            book01.Title = "Programming Book";
+            Console.WriteLine(book01.Title);
             #endregion
         }
     }
