@@ -7,5 +7,6 @@ namespace C__Basics_Session05_Assignment
     internal class Book
     {
         private string password = "secret";
+        internal int copiesInStock = 5;
     }
 }
