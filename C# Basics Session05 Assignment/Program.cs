@@ -1,4 +1,6 @@
-﻿namespace C__Basics_Session05_Assignment
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace C__Basics_Session05_Assignment
 {
     internal class Program
     {
@@ -49,9 +51,16 @@
             #region Q06
             //Given int genreNumber = 1;, cast it into a Genre value and print the result
 
-            int genreNumber = 1;
-            Genre result = (Genre)genreNumber;
-            Console.WriteLine(result);
+            //int genreNumber = 1;
+            //Genre result = (Genre)genreNumber;
+            //Console.WriteLine(result);
+            #endregion
+
+            #region Q07
+            //Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+            Genre genre = Genre.Fiction;
+            string genreAsString = genre.ToString();
+            Console.WriteLine(genreAsString);
             #endregion
         }
     }
